@@ -14,13 +14,13 @@ import java.io.IOException;
 import java.text.ParseException;
 
 @RestController
-public class CsvController {
+public class FileProcessorController {
 
     private final IProcesorCsvService iprocesorCsvService;
     private final IProcessorExcelService iprocesorExcelService;
 
     @Autowired
-    public CsvController(IProcesorCsvService iprocesorCsvService, IProcessorExcelService iprocesorExcelService) {
+    public FileProcessorController(IProcesorCsvService iprocesorCsvService, IProcessorExcelService iprocesorExcelService) {
         this.iprocesorCsvService=iprocesorCsvService;
         this.iprocesorExcelService = iprocesorExcelService;
     }
